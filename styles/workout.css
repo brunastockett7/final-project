@@ -120,3 +120,32 @@ img {
     height: 300px; /* Reduce height on smaller screens */
   }
 }
+/* General Image Sizing */
+img {
+width: 100%; /* Makes the image responsive */
+height: auto; /* Keeps the aspect ratio intact */
+max-width: 1200px; /* Limits the image width */
+margin: 0 auto; /* Centers the image */
+display: block; /* Ensures block-level behavior */
+}
+
+/* For the Banner Image */
+.banner {
+width: 100%;
+height: 400px; /* You can adjust this height */
+object-fit: cover; /* Ensures the image fits inside without distortion */
+max-width: 1200px; /* Ensures the banner doesn’t exceed 1200px */
+margin: 0 auto;
+display: block;
+}
+
+/* Responsive Image Adjustments */
+@media (max-width: 768px) {
+img {
+max-width: 100%; /* Ensure images scale for small screens */
+}
+
+.banner {
+height: 300px; /* Smaller height for mobile */
+}
+}
