@@ -645,19 +645,7 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for added effect */
 }
 
-/* Individual workout image styling */
-.workout-image {
-  width: 30%;
-  background-color: #f9f9f9; /* Light neutral background for each image */
-  padding: 10px; /* Space around each image */
-  border-radius: 10px;
-}
-
-.workout-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
+/
 /* Workout Images Container */
 .workout-images-container {
   display: flex;
@@ -673,7 +661,7 @@ h3 {
 .workout-image {
   width: 30%;
   background-color: #f9f9f9; /* Light background color around each image */
-  padding: 15px;
+  padding: 15px; /* Space around each image */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for effect */
   transition: all 0.3s ease;
@@ -684,7 +672,13 @@ h3 {
   width: 100%;
   height: auto;
   border-radius: 6px;
-  border: 5px solid #f77f00; /* Orange color border around the images */
+  border: 5px solid #f77f00 !important; /* Orange color border around the images */
+}
+
+/* Hover effect */
+.workout-image:hover {
+  background-color: #FFA94D; /* Lighter color when hovered */
+  transform: scale(1.05); /* Slight zoom-in effect */
 }
 
 .workout-image:hover {
