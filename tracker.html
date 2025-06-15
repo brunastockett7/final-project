@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styles/workout.css" />
   <link rel="icon" href="images/favicon.jpg" />
   <title>FitStrong | Tracker</title>
+  <!-- Add chart.js to visualize progress -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
@@ -44,12 +46,60 @@
 
       <button type="submit">Submit</button>
     </form>
+
+    <!-- Progress Bar Section -->
+    <section class="progress">
+      <h3>Your Progress</h3>
+      <p>Track your workouts over time</p>
+      <canvas id="workoutProgressChart"></canvas> <!-- Chart.js for visualizing progress -->
+    </section>
+
+    <section class="recent-activity">
+      <h3>Recent Activity</h3>
+      <p>See your last few workouts logged</p>
+      <div id="activity-log">
+        <!-- Display the latest workouts here -->
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 FitStrong | Created by Bruna Stockett</p>
     <p><a href="attributions.html" style="color: white;">Attributions</a></p>
   </footer>
+
+  <script>
+    // Example chart data to track workout frequency
+    const workoutProgressChart = document.getElementById('workoutProgressChart').getContext('2d');
+    const chart = new Chart(workoutProgressChart, {
+      type: 'bar',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], // Days of the week
+        datasets: [{
+          label: 'Workouts Completed',
+          data: [1, 2, 3, 2, 1, 0, 1], // Example data, replace with user input
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255, 99, 132, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    // Example of recent activity (You can dynamically add recent workout logs based on user input)
+    document.getElementById('activity-log').innerHTML = `
+      <ul>
+        <li>Strength Training - 3 sets of Push-Ups (1 hour ago)</li>
+        <li>Cardio - 30-minute Jog (3 hours ago)</li>
+        <li>Strength Training - 4 sets of Squats (2 days ago)</li>
+      </ul>
+    `;
+  </script>
 </body>
 </html>
-
