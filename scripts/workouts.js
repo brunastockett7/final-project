@@ -1,5 +1,3 @@
-import { openModal, closeModal, setupModalEvents } from './modal.js';
-
 const workoutList = document.querySelector('#workout-list');
 
 async function loadWorkouts() {
@@ -21,24 +19,18 @@ function displayWorkouts(workouts) {
     const card = document.createElement('div');
     card.classList.add('card');
 
+    console.log(`Image path for ${workout.name}: images/${workout.image}`); // Check image paths in the console
+
     card.innerHTML = `
       <h3>${workout.name}</h3>
       <img src="images/${workout.image}" alt="${workout.name}" loading="lazy">
       <p><strong>Type:</strong> ${workout.type}</p>
       <p><strong>Equipment:</strong> ${workout.equipment}</p>
       <p><strong>Sets:</strong> ${workout.sets}</p>
-      <button data-name="${workout.name}" data-description="${workout.description}">More Info</button>
     `;
-
-    // Add button event listener
-    card.querySelector('button').addEventListener('click', (e) => {
-      const { name, description } = e.target.dataset;
-      openModal(name, description);
-    });
-
+    
     workoutList.appendChild(card);
   });
 }
 
-setupModalEvents();
 loadWorkouts();

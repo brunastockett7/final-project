@@ -73,79 +73,48 @@ button:hover {
   margin: 1rem 0;
 }
 
+/* General Image Sizing */
 img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-/* Responsive Navigation */
-.hamburger {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 1rem;
-  }
-
-  nav.open a {
-    display: block;
-    margin: 0.5rem 0;
-  }
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Keeps the aspect ratio intact */
+  max-width: 1200px; /* Limits the image width */
+  margin: 0 auto; /* Centers the image */
+  display: block; /* Ensures block-level behavior */
 }
 
 /* Banner Styling */
 .banner {
   width: 100%;
-  max-width: 1200px; /* Control the max width of the banner */
-  height: 400px;     /* Standard height for banners */
-  object-fit: cover; /* Ensure the banner scales properly */
+  height: 400px; /* Standard height for banners */
+  object-fit: cover; /* Ensures the banner image covers the space properly */
+  max-width: 1200px; /* Limits the banner width */
   margin: 0 auto;
   display: block;
 }
 
-@media (max-width: 768px) {
-  .banner {
-    height: 300px; /* Reduce height on smaller screens */
-  }
-}
-/* General Image Sizing */
-img {
-width: 100%; /* Makes the image responsive */
-height: auto; /* Keeps the aspect ratio intact */
-max-width: 1200px; /* Limits the image width */
-margin: 0 auto; /* Centers the image */
-display: block; /* Ensures block-level behavior */
-}
-
-/* For the Banner Image */
-.banner {
-width: 100%;
-height: 400px; /* You can adjust this height */
-object-fit: cover; /* Ensures the image fits inside without distortion */
-max-width: 1200px; /* Ensures the banner doesn’t exceed 1200px */
-margin: 0 auto;
-display: block;
-}
-
 /* Responsive Image Adjustments */
 @media (max-width: 768px) {
-img {
-max-width: 100%; /* Ensure images scale for small screens */
+  img {
+    max-width: 100%; /* Ensure images scale for small screens */
+  }
+
+  .banner {
+    height: 300px; /* Smaller height for mobile */
+  }
+}
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #F77F00;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.banner {
-height: 300px; /* Smaller height for mobile */
-}
+#close-modal:hover {
+  background-color: #FFA94D;
 }
