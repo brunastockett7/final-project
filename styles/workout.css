@@ -634,3 +634,26 @@ h3 {
   margin: 10px 0; /* Space between list items */
   color: #333; /* Dark text for better readability */
 }
+/* Workout Images Container */
+.workout-images-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Pastel color */
+  border-radius: 10px;
+}
+
+/* Individual workout image styling */
+.workout-image {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #fff; /* White background for the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workout-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
