@@ -118,3 +118,62 @@ img {
 #close-modal:hover {
   background-color: #FFA94D;
 }
+/* Flexbox Container */
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
+  justify-content: space-between; /* Distributes images with space between */
+  gap: 10px; /* Optional: space between images */
+}
+
+/* Image styling */
+.image-container img {
+  width: 200px; /* Adjust the width of the images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 6px; /* Optional: rounded corners for images */
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive columns */
+  gap: 10px; /* Optional: space between images */
+}
+
+.image-container img {
+  width: 100%; /* Make the image take the full column width */
+  height: auto;
+  border-radius: 6px; /* Optional: rounded corners */
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.image-container img {
+  width: 200px; /* Set image size */
+  height: auto;
+  border-radius: 6px;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Flexbox Container */
+#workout-list {
+  display: flex;
+  flex-wrap: wrap;  /* Ensures images wrap when needed */
+  justify-content: space-between; /* Distributes the images with space in between */
+  gap: 10px;  /* Space between images */
+}
+
+/* Image Styling */
+#workout-list img {
+  width: 200px; /* Adjust the image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 6px; /* Optional: rounded corners for the images */
+}
+
