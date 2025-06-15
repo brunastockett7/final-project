@@ -640,16 +640,17 @@ h3 {
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
-  background-color: #f0f0f0; /* Pastel color */
+  background-color: #f0f0f0; /* Light neutral pastel color */
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for added effect */
 }
 
 /* Individual workout image styling */
 .workout-image {
   width: 30%;
+  background-color: #f9f9f9; /* Light neutral background for each image */
+  padding: 10px; /* Space around each image */
   border-radius: 10px;
-  background-color: #fff; /* White background for the images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .workout-image img {
