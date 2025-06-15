@@ -4,7 +4,7 @@
     "type": "Strength",
     "equipment": "None",
     "sets": "3 x 15",
-    "image": "images/pushups.jpg",
+    "image": "pushups.jpg",
     "description": "A great bodyweight exercise for chest, triceps, and shoulders."
   },
   {
@@ -12,7 +12,7 @@
     "type": "Strength",
     "equipment": "None",
     "sets": "3 x 20",
-    "image": "images/squats.jpg",
+    "image": "squats.jpg",
     "description": "Works your legs and glutes. Keep your back straight!"
   },
   {
@@ -20,7 +20,7 @@
     "type": "Cardio",
     "equipment": "None",
     "sets": "3 x 30 seconds",
-    "image": "images/jumpingjacks.jpg",
+    "image": "jumpingjacks.jpg",
     "description": "A classic cardio warm-up exercise to get your heart rate up."
   },
   {
@@ -28,7 +28,7 @@
     "type": "Core",
     "equipment": "None",
     "sets": "3 x 1 min",
-    "image": "images/plank.jpg",
+    "image": "plank.jpg",
     "description": "Strengthens the entire core. Keep a straight line from head to toes."
   },
   {
@@ -36,7 +36,7 @@
     "type": "Strength",
     "equipment": "None",
     "sets": "3 x 10 per leg",
-    "image": "images/lunges.jpg",
+    "image": "lunges.jpg",
     "description": "Great for glutes and quads. Step forward and lower your back knee."
   },
   {
@@ -44,7 +44,7 @@
     "type": "Cardio",
     "equipment": "None",
     "sets": "3 x 10",
-    "image": "images/burpees.jpg",
+    "image": "burpees.jpg",
     "description": "Full-body movement that burns calories fast!"
   },
   {
@@ -52,7 +52,7 @@
     "type": "Cardio",
     "equipment": "None",
     "sets": "3 x 30 sec",
-    "image": "images/mountainclimbers.jpg",
+    "image": "mountainclimbers.jpg",
     "description": "Core and cardio in one! Drive your knees toward your chest quickly."
   },
   {
@@ -60,7 +60,7 @@
     "type": "Strength",
     "equipment": "Dumbbells",
     "sets": "3 x 12",
-    "image": "images/dumbbellrows.jpg",
+    "image": "dumbbellrows.jpg",
     "description": "Targets your back muscles. Keep your core tight."
   },
   {
@@ -68,7 +68,7 @@
     "type": "Strength",
     "equipment": "Dumbbells",
     "sets": "3 x 15",
-    "image": "images/bicepcurls.jpg",
+    "image": "bicepcurls.jpg",
     "description": "Focus on controlled curls. Don't swing your arms."
   },
   {
@@ -76,7 +76,7 @@
     "type": "Strength",
     "equipment": "Chair",
     "sets": "3 x 12",
-    "image": "images/tricepdips.jpg",
+    "image": "tricepdips.jpg",
     "description": "Build strong triceps using a sturdy chair or bench."
   },
   {
@@ -84,7 +84,7 @@
     "type": "Core",
     "equipment": "None",
     "sets": "3 x 20",
-    "image": "images/crunches.jpg",
+    "image": "crunches.jpg",
     "description": "Focus on your upper abs. Don’t pull your neck!"
   },
   {
@@ -92,7 +92,7 @@
     "type": "Cardio",
     "equipment": "None",
     "sets": "3 x 30 sec",
-    "image": "images/highknees.jpg",
+    "image": "highknees.jpg",
     "description": "Drive knees up fast for a powerful cardio blast."
   },
   {
@@ -100,7 +100,7 @@
     "type": "Cardio",
     "equipment": "Jump Rope",
     "sets": "3 x 1 min",
-    "image": "images/jumprope.jpg",
+    "image": "jumprope.jpg",
     "description": "Excellent cardio that improves coordination and burns fat."
   },
   {
@@ -108,7 +108,7 @@
     "type": "Strength",
     "equipment": "Barbell",
     "sets": "3 x 8",
-    "image": "images/deadlifts.jpg",
+    "image": "deadlifts.jpg",
     "description": "Total-body strength move. Keep your back straight!"
   },
   {
@@ -116,7 +116,7 @@
     "type": "Core",
     "equipment": "Medicine Ball",
     "sets": "3 x 20",
-    "image": "images/russiantwists.jpg",
+    "image": "russiantwists.jpg",
     "description": "Twist from the core! Great for obliques."
   }
 ]
