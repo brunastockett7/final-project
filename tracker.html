@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Set your fitness goals and track your progress.">
+  <meta name="author" content="Bruna Stockett" />
+  <link rel="stylesheet" href="styles/workout.css" />
+  <link rel="icon" href="images/favicon.png" />
+  <title>FitStrong | Tracker</title>
+</head>
+<body>
+  <header>
+    <h1>FitStrong</h1>
+    <p>Fitness Tracker</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="tracker.html">Tracker</a>
+  </nav>
+
+  <main class="container">
+    <h2>Set Your Fitness Goals</h2>
+    <form action="thanks.html" method="get">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="goal">Fitness Goal:</label>
+      <input type="text" id="goal" name="goal" placeholder="e.g., Build muscle, Lose weight" required />
+
+      <label for="frequency">Workout Frequency (days/week):</label>
+      <input type="number" id="frequency" name="frequency" min="1" max="7" required />
+
+      <label for="focus">Focus Area:</label>
+      <select id="focus" name="focus" required>
+        <option value="">Choose...</option>
+        <option value="strength">Strength</option>
+        <option value="cardio">Cardio</option>
+        <option value="core">Core</option>
+        <option value="flexibility">Flexibility</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FitStrong | Created by Bruna Stockett</p>
+    <p><a href="attributions.html" style="color: white;">Attributions</a> |
+       <a href="https://your-video-link" target="_blank" style="color: white;">Project Video</a></p>
+  </footer>
+</body>
+</html>
