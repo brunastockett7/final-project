@@ -560,3 +560,23 @@ h3 {
   font-size: 1rem;
   color: #666;
 }
+/* Centering the 'Why FitStrong' section */
+.why-fitstrong {
+  text-align: center; /* Centers the text */
+  padding: 2rem;
+}
+
+.why-fitstrong h3 {
+  font-size: 2rem; /* Optional: Adjust the size */
+  margin-bottom: 1rem;
+}
+
+.why-fitstrong ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+}
+
+.why-fitstrong ul li {
+  font-size: 1.2rem; /* Adjust list item font size */
+  margin: 0.5rem 0; /* Add space between items */
+}
