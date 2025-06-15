@@ -607,3 +607,30 @@ h3 {
   font-size: 1.2rem; /* Adjust list item font size */
   margin: 0.5rem 0; /* Add space between items */
 }
+/* Centering the "Why FitStrong" section */
+.centered-why-fitstrong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #f4f4f4; /* Optional: light background */
+  text-align: center; /* Centering text inside */
+}
+
+.centered-why-fitstrong h3 {
+  font-size: 2rem; /* Size of the heading */
+  color: #003049; /* Accent color */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.centered-why-fitstrong ul {
+  list-style: none; /* Remove bullets from list */
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.centered-why-fitstrong ul li {
+  margin: 10px 0; /* Space between list items */
+  color: #333; /* Dark text for better readability */
+}
