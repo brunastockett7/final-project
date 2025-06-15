@@ -580,3 +580,30 @@ h3 {
   font-size: 1.2rem; /* Adjust list item font size */
   margin: 0.5rem 0; /* Add space between items */
 }
+/* Centering the 'Why FitStrong' section */
+.why-fitstrong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text horizontally */
+  padding: 2rem;
+}
+
+.why-fitstrong h3 {
+  font-size: 2rem; /* Optional: Adjust the size */
+  margin-bottom: 1rem;
+}
+
+.why-fitstrong ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Align list items vertically */
+  align-items: center; /* Centers the list items horizontally */
+}
+
+.why-fitstrong ul li {
+  font-size: 1.2rem; /* Adjust list item font size */
+  margin: 0.5rem 0; /* Add space between items */
+}
