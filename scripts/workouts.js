@@ -11,6 +11,7 @@ async function loadWorkouts() {
     displayWorkouts(workouts);
   } catch (error) {
     workoutList.innerHTML = `<p>Error loading workouts: ${error.message}</p>`;
+console.error(error);  // Log the error to the console for more details
   }
 }
 
