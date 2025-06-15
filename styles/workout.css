@@ -202,4 +202,17 @@ img {
   object-fit: cover; /* Ensure image aspect ratio is maintained without distortion */
   border-radius: 6px; /* Optional: rounded corners */
 }
+/* Banner styling */
+.banner-container {
+  text-align: center; /* Centers the banner */
+  margin-top: 20px; /* Optional: margin on top */
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* You can adjust the height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px; /* Optional: rounded corners for the banner */
+}
 
