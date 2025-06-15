@@ -332,4 +332,38 @@ img {
     height: 150px; /* Reduce the image height on smaller screens */
   }
 }
+/* Feature Section: Three images side by side */
+.features {
+  display: flex;
+  justify-content: space-between;  /* Space the images evenly */
+  align-items: center;  /* Align images vertically at the center */
+  margin-top: 2rem;
+}
 
+.feature {
+  flex: 1;  /* Allow images to take up equal space */
+  text-align: center;  /* Center text below the images */
+  margin: 0 1rem;  /* Add horizontal margin between each feature */
+}
+
+.feature img {
+  width: 100%;  /* Ensure images take up full width of the container */
+  height: 250px;  /* Fixed height for all images */
+  object-fit: cover;  /* Ensure images fill the area without distortion */
+  border-radius: 8px;  /* Optional: adds rounded corners */
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;  /* Stack the images vertically on small screens */
+  }
+
+  .feature {
+    margin-bottom: 1rem;  /* Add space between stacked images */
+    width: 100%;  /* Make images take full width on smaller screens */
+  }
+
+  .feature img {
+    height: 200px;  /* Reduce the height of the images on small screens */
+  }
+}
