@@ -215,4 +215,13 @@ img {
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 10px; /* Optional: rounded corners for the banner */
 }
+.banner {
+  width: 100%;
+  height: 350px;  /* Standard height to ensure it doesn't cover too much space */
+  object-fit: cover;  /* Ensures the image fills the space and is cropped correctly */
+  object-position: top;  /* This keeps the image centered from the top (helps to show the head) */
+  max-width: 1200px;  /* Ensures the banner doesn't stretch too wide */
+  margin: 0 auto;
+  display: block;
+}
 
