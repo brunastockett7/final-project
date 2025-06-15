@@ -31,33 +31,28 @@
   </section>
 
   <main class="container">
-    <section>
-      <h2>Welcome to FitStrong</h2>
-      <p>Get stronger, healthier, and more confident with our easy-to-use workout tracker. Whether you're lifting weights or going for a run, FitStrong helps you stay on track.</p>
-      <a href="workouts.html"><button>Explore Workouts</button></a>
+    <!-- Motivational Quote -->
+    <section class="motivation">
+      <h2>Welcome Back! Here's Your Daily Motivation:</h2>
+      <p class="quote" id="daily-quote">"Push yourself, because no one else is going to do it for you."</p>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-      <h2>Why Choose FitStrong?</h2>
-      <div class="feature">
-        <img src="images/feature1.jpg" alt="Curated Workouts" />
-        <h3>Curated Workouts</h3>
-        <p>15+ curated workouts designed to help you achieve your fitness goals.</p>
-      </div>
-      <div class="feature">
-        <img src="images/feature2.jpg" alt="Personalized Tracking" />
-        <h3>Personalized Tracking</h3>
-        <p>Track your progress and stay motivated with personalized goal tracking.</p>
-      </div>
-      <div class="feature">
-        <img src="images/feature3.jpg" alt="Responsive Design" />
-        <h3>Responsive Design</h3>
-        <p>Access your workouts from any device, at any time, with a fully responsive site.</p>
-      </div>
+    <!-- Fitness Challenge -->
+    <section class="fitness-challenge">
+      <h2>Today's Fitness Challenge:</h2>
+      <p>Try to complete 20 Push-ups today!</p>
     </section>
 
-    <!-- Why FitStrong Section -->
+    <!-- Interactive Goal Selection -->
+    <section class="interactive">
+      <h2>What's Your Fitness Goal?</h2>
+      <button onclick="displayGoal('Build Muscle')">Build Muscle</button>
+      <button onclick="displayGoal('Lose Weight')">Lose Weight</button>
+      <button onclick="displayGoal('Increase Flexibility')">Increase Flexibility</button>
+      <p id="goal-response"></p>
+    </section>
+
+    <!-- Workout Options -->
     <section class="card">
       <h3>Why FitStrong?</h3>
       <ul>
@@ -75,5 +70,21 @@
   </footer>
 
   <script type="module" src="scripts/workouts.js"></script>
+
+  <!-- JavaScript for interactive goal section -->
+  <script>
+    function displayGoal(goal) {
+      document.getElementById("goal-response").innerText = `Your fitness goal is: ${goal}`;
+    }
+
+    const quotes = [
+      "Push yourself, because no one else is going to do it for you.",
+      "Success is the sum of small efforts, repeated day in and day out.",
+      "Don't stop when you're tired. Stop when you're done.",
+    ];
+
+    // Randomly pick a quote
+    document.getElementById("daily-quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+  </script>
 </body>
 </html>
