@@ -23,7 +23,7 @@ function displayWorkouts(workouts) {
 
     card.innerHTML = `
       <h3>${workout.name}</h3>
-      <img src="${workout.image}" alt="${workout.name}" loading="lazy">
+      <img src="images/${workout.image}" alt="${workout.name}" loading="lazy">
       <p><strong>Type:</strong> ${workout.type}</p>
       <p><strong>Equipment:</strong> ${workout.equipment}</p>
       <p><strong>Sets:</strong> ${workout.sets}</p>
