@@ -176,4 +176,30 @@ img {
   height: auto; /* Maintain aspect ratio */
   border-radius: 6px; /* Optional: rounded corners for the images */
 }
+/* Flexbox Container for workout images */
+#workout-list {
+  display: flex;
+  flex-wrap: wrap;  /* Ensures images wrap to the next row if needed */
+  justify-content: space-between; /* Distribute images with space between */
+  gap: 10px;  /* Space between images */
+  padding: 10px;  /* Optional: Padding around the entire container */
+}
+
+/* Card styling (optional, for better presentation) */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 200px;  /* Fixed width of the card */
+  text-align: center;
+}
+
+/* Image Styling */
+#workout-list img {
+  width: 100%;      /* Make images fill the card width */
+  height: 200px;    /* Fixed height for consistent size */
+  object-fit: cover; /* Ensure image aspect ratio is maintained without distortion */
+  border-radius: 6px; /* Optional: rounded corners */
+}
 
