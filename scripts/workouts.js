@@ -1,3 +1,7 @@
+/* eslint-env browser */
+/* eslint-disable no-undef */
+/* eslint-disable no-console */
+
 document.addEventListener("DOMContentLoaded", () => {
   const workoutList = document.querySelector('#workout-list');
   if (!workoutList) return;
