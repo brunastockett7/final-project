@@ -1,5 +1,7 @@
 /* eslint-env browser */
 /* eslint-disable no-undef */
+/* eslint-env browser */
+
 const workoutList = document.querySelector('#workout-list');
 
 async function loadWorkouts() {
@@ -12,8 +14,12 @@ async function loadWorkouts() {
     const workouts = await response.json();
     displayWorkouts(workouts);
   } catch (error) {
-    workoutList.innerHTML = `<p>Error loading workouts: ${error.message}</p>`;
-console.error(error);  // Log the error to the console for more details
+    console.error(error);  // Log the error to the console for more details
+    if (workoutList) {
+      workoutList.innerHTML = `<p>Error loading workouts: ${error.message || error}</p>`;
+    } else {
+      console.error('Element #workout-list not found in the DOM.');
+    }
   }
 }
 
@@ -37,4 +43,3 @@ function displayWorkouts(workouts) {
 }
 
 loadWorkouts();
-
