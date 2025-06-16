@@ -645,56 +645,51 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for added effect */
 }
 
-/
 /* Workout Images Container */
 .workout-images-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: center;  /* Centers the images horizontally */
+  gap: 20px;  /* Space between the images */
   padding: 20px;
-  background-color: #f0f0f0; /* Light neutral pastel background for the container */
+  background-color: #f0f0f0; /* Light neutral pastel background */
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 
 /* Individual workout image styling */
 .workout-image {
-  width: 30%;
-  background-color: #f9f9f9; /* Light background color around each image */
-  padding: 15px; /* Space around each image */
+  width: 30%;  /* Each image takes up 30% of the container width */
+  background-color: #f9f9f9;  /* Light neutral background around each image */
+  padding: 15px;  /* Space around each image */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for effect */
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  transition: all 0.3s ease;  /* Smooth hover transition */
 }
 
 /* Color border around workout images */
 .workout-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  border: 5px solid #f77f00 !important; /* Orange color border around the images */
+  width: 100%;  /* Make images fill the container */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 6px;  /* Rounded corners */
+  border: 5px solid #f77f00;  /* Orange color border around the images */
 }
 
 /* Hover effect */
 .workout-image:hover {
-  background-color: #FFA94D; /* Lighter color when hovered */
-  transform: scale(1.05); /* Slight zoom-in effect */
-}
-
-.workout-image:hover {
-  background-color: #FFA94D; /* Lighter color when hovered */
-  transform: scale(1.05); /* Slight zoom-in effect */
+  background-color: #FFA94D;  /* Lighter background on hover */
+  transform: scale(1.05);  /* Slight zoom-in effect */
 }
 
 /* Media Query to adjust for smaller screens */
 @media (max-width: 768px) {
   .workout-image {
-    width: 45%; /* Adjust the width for mobile to be two images per row */
+    width: 45%;  /* Adjust the width for mobile to be two images per row */
   }
 }
 
 @media (max-width: 480px) {
   .workout-image {
-    width: 100%; /* One image per row on small screens */
+    width: 100%;  /* One image per row on small screens */
   }
 }
