@@ -1,3 +1,5 @@
+/* eslint-env browser */
+/* eslint-disable no-undef */
 const workoutList = document.querySelector('#workout-list');
 
 async function loadWorkouts() {
@@ -35,3 +37,4 @@ function displayWorkouts(workouts) {
 }
 
 loadWorkouts();
+
