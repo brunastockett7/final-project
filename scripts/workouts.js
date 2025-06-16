@@ -1,6 +1,5 @@
 /* eslint-env browser */
 /* eslint-disable no-undef */
-/* eslint-env browser */
 
 const workoutList = document.querySelector('#workout-list');
 
