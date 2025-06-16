@@ -693,3 +693,34 @@ h3 {
     width: 100%;  /* One image per row on small screens */
   }
 }
+/* Workout Card Styling */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  border: 2px solid #f77f00; /* Add an orange border to the card */
+  transition: all 0.3s ease;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  background-color: #f77f00;  /* Orange background when hovering */
+  color: white;  /* White text when hovering */
+  transform: scale(1.05);  /* Slight zoom-in effect */
+}
+
+.card h3 {
+  color: #f77f00;  /* Orange color for headings */
+}
+
+.card p {
+  color: #333;  /* Standard text color */
+}
+
+/* Optional: Add a small orange accent around images inside the cards */
+.card img {
+  border: 4px solid #f77f00;  /* Orange border around images inside cards */
+  border-radius: 6px;  /* Optional: rounded corners for images */
+}
